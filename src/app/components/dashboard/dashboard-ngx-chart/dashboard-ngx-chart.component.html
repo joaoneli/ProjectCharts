@@ -1,0 +1,37 @@
+<div>
+  <h1 style="text-align: center !important; padding-top: 15px !important;">Gráficos Ngx</h1>
+  <br>
+</div>
+<div>
+  <mat-card  fxFlex="100" class="mat-elevation-z4" fxLayoutAlign="center center">
+    <ngx-charts-pie-chart
+      [view]="[560,600]"
+      [scheme]="colorScheme"
+      [results]="this.Products"
+      [gradient]="gradient"
+      [legend]="showLegend"
+      [legendPosition]="legendPosition"
+      [labels]="showLabels"
+      [doughnut]="isDoughnut"
+      [animations]="animations"
+      (select)="onSelect($event)"
+      (activate)="onActivate($event)"
+      (deactivate)="onDeactivate($event)"
+    ></ngx-charts-pie-chart>
+  </mat-card>
+  <mat-card  fxFlex="100" class="mat-elevation-z4" fxLayoutAlign="center center">
+    <ngx-charts-pie-chart
+      [view]="[560,600]"
+      [scheme]="colorScheme"
+      [results]="this.fabio"
+      [gradient]="gradient"
+      [legend]="showLegend"
+      [legendPosition]="legendPosition"
+      [labels]="showLabels"
+      [doughnut]="isDoughnut"
+      (select)="onSelect($event)"
+      (activate)="onActivate($event)"
+      (deactivate)="onDeactivate($event)"
+    ></ngx-charts-pie-chart>
+  </mat-card>
+</div>

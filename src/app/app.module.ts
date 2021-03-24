@@ -10,6 +10,9 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { DashboardGridComponent } from './components/dashboard/dashboard-grid/dashboard-grid.component';
 import { DashboardChartComponent } from './components/dashboard/dashboard-chart/dashboard-chart.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { DashboardNgxChartComponent } from './components/dashboard/dashboard-ngx-chart/dashboard-ngx-chart.component';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -17,7 +20,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     AppComponent,
     DashboardComponent,
     DashboardGridComponent,
-    DashboardChartComponent
+    DashboardChartComponent,
+    DashboardNgxChartComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +31,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     WavesModule,
     AngularMaterialModule,
     MDBBootstrapModule.forRoot(),
-    FlexLayoutModule
+    FlexLayoutModule,
+    NgxChartsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -45,6 +45,18 @@
     </div>
     <br>
     <div fxLayout="row">
-        <app-dashboard-grid></app-dashboard-grid>
+        <div fxFlex="50">
+            <app-dashboard-grid></app-dashboard-grid>
+        </div>
+        <div fxFlex="50">
+            <app-dashboard-grid></app-dashboard-grid>
+        </div>
     </div>
+    <div fxLayout="row">
+        <mat-divider></mat-divider>
+    </div>
+    <div style="display: block !important;">
+        <app-dashboard-ngx-chart></app-dashboard-ngx-chart>
+    </div>
+
 </mat-card>
